@@ -1,16 +1,29 @@
-# Agentic AI with Microsoft Agent Framework
+# 🚀 Agentic AI with Microsoft Agent Framework
 
-## Overview
-
-This repository contains the complete hands-on lab material for learning **Agentic AI** using the **Microsoft Agent Framework**, **Azure AI Foundry**, and **Azure OpenAI**.
-
-The course is organized into four learning days, followed by notebooks, datasets, architecture examples, and capstone projects.
-
-Participants will learn how to design, build, orchestrate, and deploy intelligent AI agents using enterprise-ready patterns.
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Azure AI Foundry](https://img.shields.io/badge/Azure-AI%20Foundry-blue)
+![Microsoft Agent Framework](https://img.shields.io/badge/Microsoft-Agent%20Framework-green)
+![License](https://img.shields.io/badge/License-Educational-orange)
 
 ---
 
-# Course Structure
+# Overview
+
+Welcome to the **Agentic AI with Microsoft Agent Framework** repository.
+
+This repository contains complete hands-on labs, architecture patterns, notebooks, enterprise datasets, workflow samples, and capstone projects to build modern AI Agents using:
+
+- Microsoft Agent Framework
+- Azure AI Foundry
+- Azure OpenAI
+- Azure AI Search
+- RAG
+- Multi-Agent Systems
+- DevUI
+
+---
+
+# Repository Structure
 
 ```
 .
@@ -25,207 +38,510 @@ Participants will learn how to design, build, orchestrate, and deploy intelligen
 
 ---
 
-# Repository Contents
+# Repository Wiring Diagram
 
-## DAY 1 – Agentic AI Foundations & Environment Setup
+```mermaid
+flowchart TB
 
-Topics Covered
+Repo[GitHub Repository]
 
-- Introduction to Agentic AI
-- AI Agents vs Chatbots
-- Agent Framework Overview
+Repo --> D1[DAY1]
+Repo --> D2[DAY2]
+Repo --> D3[DAY3]
+Repo --> D4[DAY4]
+Repo --> DS[Datasets]
+Repo --> NB[Notebooks]
+Repo --> CP[Capstone Projects]
+```
+
+---
+
+# Course Learning Journey
+
+```mermaid
+flowchart LR
+
+A[Agentic AI Foundations]
+
+-->
+
+B[Workflow Patterns]
+
+-->
+
+C[Multi-Agent Systems]
+
+-->
+
+D[Enterprise AI]
+
+-->
+
+E[Capstone Project]
+```
+
+---
+
+# Enterprise Architecture
+
+```mermaid
+flowchart LR
+
+User
+
+-->
+
+DevUI
+
+-->
+
+Workflow
+
+Workflow --> Agent1[Location Agent]
+
+Workflow --> Agent2[Weather Agent]
+
+Workflow --> Agent3[Cuisine Agent]
+
+Workflow --> Agent4[Destination Agent]
+
+Agent1 --> AzureAI
+
+Agent2 --> AzureAI
+
+Agent3 --> AzureAI
+
+Agent4 --> AzureAI
+
+AzureAI --> AzureOpenAI
+
+AzureAI --> AIFoundry
+```
+
+---
+
+# Multi-Agent Workflow
+
+```mermaid
+flowchart TD
+
+User
+
+-->
+
+LocationAgent
+
+LocationAgent
+
+-->
+
+DestinationAgent
+
+LocationAgent
+
+-->
+
+WeatherAgent
+
+LocationAgent
+
+-->
+
+CuisineAgent
+
+DestinationAgent
+
+-->
+
+Planner
+
+WeatherAgent
+
+-->
+
+Planner
+
+CuisineAgent
+
+-->
+
+Planner
+
+Planner
+
+-->
+
+Response
+```
+
+---
+
+# Parallel Workflow
+
+```mermaid
+flowchart TB
+
+Input
+
+-->
+
+Location
+
+Location
+
+-->
+
+Destination
+
+Location
+
+-->
+
+Weather
+
+Location
+
+-->
+
+Cuisine
+
+Destination --> Planner
+
+Weather --> Planner
+
+Cuisine --> Planner
+
+Planner --> Output
+```
+
+---
+
+# Sequential Workflow
+
+```mermaid
+flowchart LR
+
+User
+
+-->
+
+Agent1
+
+-->
+
+Agent2
+
+-->
+
+Agent3
+
+-->
+
+Agent4
+
+-->
+
+Final Response
+```
+
+---
+
+# RAG Architecture
+
+```mermaid
+flowchart LR
+
+Documents
+
+-->
+
+Chunking
+
+-->
+
+Embeddings
+
+-->
+
+Vector Database
+
+User
+
+-->
+
+Retriever
+
+Retriever
+
+-->
+
+Vector Database
+
+Vector Database
+
+-->
+
+Relevant Chunks
+
+Relevant Chunks
+
+-->
+
+LLM
+
+LLM
+
+-->
+
+Answer
+```
+
+---
+
+# Agent-to-Agent Communication
+
+```mermaid
+sequenceDiagram
+
+participant User
+
+participant Agent1
+
+participant Agent2
+
+participant Agent3
+
+User->>Agent1: Vacation Request
+
+Agent1->>Agent2: Destination
+
+Agent2->>Agent3: Weather
+
+Agent3-->>Agent2: Forecast
+
+Agent2-->>Agent1: Destination Details
+
+Agent1-->>User: Complete Itinerary
+```
+
+---
+
+# Azure AI Foundry Architecture
+
+```mermaid
+flowchart LR
+
+User
+
+-->
+
+DevUI
+
+-->
+
+Microsoft Agent Framework
+
+-->
+
+Azure AI Foundry
+
+Azure AI Foundry
+
+-->
+
+Azure OpenAI
+
+Azure AI Foundry
+
+-->
+
+Azure AI Search
+
+Azure AI Search
+
+-->
+
+Knowledge Base
+
+Azure OpenAI
+
+-->
+
+Response
+```
+
+---
+
+# DAY 1
+
+## Agentic AI Foundations
+
+Topics
+
+- Agentic AI
+- AI Agents
+- Chatbots
 - Azure AI Foundry
 - Azure OpenAI
-- Development Environment Setup
-- First AI Agent
-- DevUI Introduction
-- Prompt Engineering Basics
+- DevUI
+- First Agent
+- Prompt Engineering
 
 Files
 
 - DAY-1-Agentic_Ai_Foundations___Setup.pdf
-- Readme.md
 
 ---
 
-## DAY 2 – Workflow Patterns & RAG
+# DAY 2
 
-Topics Covered
+## Workflow Patterns
 
-- Sequential Workflows
-- Parallel Workflows
+Topics
+
+- Sequential Workflow
+- Parallel Workflow
+- Fan-Out
+- Fan-In
 - Conditional Routing
-- Fan-Out / Fan-In
 - Orchestrator Pattern
-- Retrieval Augmented Generation (RAG)
-- Vector Search
-- Knowledge Grounding
+- RAG
 
 Files
 
-- DAy-2-Architecture_Patterns___RAG_Agents__A1_.pdf
-- readme.md
+- Architecture PDF
+- Labs
 
 ---
 
-## DAY 3 – Multi-Agent Systems
+# DAY 3
 
-Topics Covered
+## Multi-Agent Systems
 
-- Multi-Agent Collaboration
-- Agent-to-Agent Communication
+Topics
+
 - Tool Calling
 - Memory
-- Context Sharing
-- Planning Agents
 - Reflection
-- Agent Coordination
-
-Files
-
-- readme.md
+- Agent Collaboration
+- A2A Communication
+- Planning Agents
 
 ---
 
-## DAY 4 – Enterprise Agentic AI
+# DAY 4
 
-Topics Covered
+## Enterprise Agentic AI
 
-- Enterprise AI Architecture
-- Azure AI Foundry Deployment
+Topics
+
+- Azure AI Foundry
 - Responsible AI
 - Monitoring
 - Evaluation
 - Security
 - Production Deployment
-- Capstone Preparation
-
-Files
-
-- readme.md
 
 ---
 
 # Datasets
 
-The Datasets folder contains enterprise sample documents used throughout the labs.
+Included enterprise datasets
 
-Included datasets
-
-- HR Policy Documents
+- HR Policies
 - Employee Records
-- IT Support Knowledge Base
-- IT Usage Policy
-- Professional Etiquette Guide
+- IT Knowledge Base
+- Security Policies
+- Professional Etiquette
 
-These datasets are used for
+Used for
 
 - RAG
-- Search
-- Knowledge Grounding
-- Enterprise Agents
+- AI Search
+- Vector Indexing
+- Enterprise QA
 
 ---
 
 # Notebooks
 
-Jupyter notebooks are provided for all practical exercises.
+Includes
 
-Examples include
+## A2A
 
-## A2A (Agent-to-Agent)
+- Client
+- Server
 
-- a2a_client.ipynb
-- a2a_server.ipynb
+## Workflow Labs
 
-Demonstrates
+- Sequential
+- Parallel
+- Orchestrator
 
-- Agent Communication
-- Message Passing
-- Collaboration
+## Multi-Agent Labs
 
----
-
-## Mini Projects
-
-Hands-on implementation of
-
-- Sequential Workflows
-- Parallel Workflows
-- Orchestrator Pattern
-- Multi-Agent Systems
+- Travel Planner
+- HR Assistant
+- IT Helpdesk
 
 ---
 
 # Capstone Projects
 
-Enterprise-level projects combining all concepts learned during the course.
+Enterprise Projects
 
-Examples include
-
-- HR Assistant
-- IT Helpdesk Agent
 - Vacation Planner
+- HR Assistant
+- IT Helpdesk
 - Enterprise Knowledge Assistant
-- Multi-Agent Orchestrator
+- Multi-Agent Enterprise Assistant
 
 ---
 
 # Prerequisites
 
-- Python 3.11+
-- Visual Studio Code
+- Python 3.11
+- VS Code
 - Git
 - Azure Subscription
-- Azure AI Foundry Project
+- Azure AI Foundry
 - Azure OpenAI Deployment
-- Azure CLI
-
----
-
-# Required Python Packages
-
-```bash
-pip install -r requirements.txt
-```
 
 ---
 
 # Environment Variables
 
-Create a `.env` file.
-
 ```env
-AI_FOUNDRY_PROJECT_ENDPOINT=<your_project_endpoint>
+AI_FOUNDRY_PROJECT_ENDPOINT=
 
-AI_FOUNDRY_DEPLOYMENT_NAME=<deployment_name>
+AI_FOUNDRY_DEPLOYMENT_NAME=
 
-AZURE_TENANT_ID=<tenant_id>
+AZURE_TENANT_ID=
 ```
 
 ---
 
-# Running the Labs
-
-Clone the repository
+# Installation
 
 ```bash
-git clone <repository-url>
-```
+git clone <repo>
 
-Install dependencies
+cd Agentic-AI
 
-```bash
 pip install -r requirements.txt
 ```
 
-Run notebooks
+---
+
+# Run Notebook
 
 ```bash
 jupyter notebook
 ```
 
-Run DevUI samples
+---
+
+# Run DevUI
 
 ```bash
 python orchestrator-devui.py
@@ -239,38 +555,40 @@ python parallel-workflow.py
 
 ---
 
-# Learning Outcomes
-
-By the end of this course, participants will be able to
-
-- Understand Agentic AI concepts
-- Build AI agents
-- Design workflow orchestration
-- Implement RAG
-- Develop multi-agent systems
-- Connect external tools
-- Deploy using Azure AI Foundry
-- Monitor enterprise AI applications
-
----
-
-# Technologies Used
+# Technologies
 
 - Microsoft Agent Framework
 - Azure AI Foundry
 - Azure OpenAI
+- Azure AI Search
 - Python
-- Jupyter Notebook
 - DevUI
-- Azure CLI
+- Jupyter
 - Vector Search
 - RAG
-- Agent Orchestration
+
+---
+
+# Learning Outcomes
+
+After completing this course you will be able to
+
+✅ Build AI Agents
+
+✅ Build Multi-Agent Systems
+
+✅ Implement RAG
+
+✅ Build Enterprise Workflows
+
+✅ Develop Agentic AI Applications
+
+✅ Deploy using Azure AI Foundry
 
 ---
 
 # License
 
-This repository is intended for educational and corporate training purposes.
+Educational & Corporate Training
 
 © AVYUKTi Tech Private Limited
