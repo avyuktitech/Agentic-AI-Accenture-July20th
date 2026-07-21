@@ -297,51 +297,56 @@ Agent1-->>User: Complete Itinerary
 
 ---
 
-# Azure AI Foundry Architecture
+
+
+## Azure AI Foundry Enterprise Architecture
 
 ```mermaid
 flowchart LR
 
-User
+    User[End User]
 
--->
+    DevUI[DevUI / Web App]
 
-DevUI
+    Workflow[Workflow Orchestrator]
 
--->
+    AgentFramework[Microsoft Agent Framework]
 
-Microsoft Agent Framework
+    Planner[Planner Agent]
+    Weather[Weather Agent]
+    Cuisine[Cuisine Agent]
+    Destination[Destination Agent]
 
--->
+    Foundry[Azure AI Foundry]
 
-Azure AI Foundry
+    OpenAI[Azure OpenAI]
+    Search[Azure AI Search]
 
-Azure AI Foundry
+    Docs[Enterprise Documents]
 
--->
+    Response[Final AI Response]
 
-Azure OpenAI
+    User --> DevUI
+    DevUI --> Workflow
+    Workflow --> AgentFramework
 
-Azure AI Foundry
+    AgentFramework --> Planner
+    AgentFramework --> Weather
+    AgentFramework --> Cuisine
+    AgentFramework --> Destination
 
--->
+    Planner --> Foundry
+    Weather --> Foundry
+    Cuisine --> Foundry
+    Destination --> Foundry
 
-Azure AI Search
+    Foundry --> OpenAI
+    Foundry --> Search
 
-Azure AI Search
+    Docs --> Search
 
--->
-
-Knowledge Base
-
-Azure OpenAI
-
--->
-
-Response
+    OpenAI --> Response
 ```
-
----
 
 # DAY 1
 
