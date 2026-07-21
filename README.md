@@ -1,4 +1,4 @@
-# 🚀 Agentic AI with Microsoft Agent Framework
+# Agentic AI with Azure Ai FOUNDRY & A2A , MCP, Microsoft Agent Framework
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Azure AI Foundry](https://img.shields.io/badge/Azure-AI%20Foundry-blue)
