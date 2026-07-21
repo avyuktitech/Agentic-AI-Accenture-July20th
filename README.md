@@ -1,152 +1,282 @@
-# Datasets
+# 🤖 Agentic AI with Azure AI Foundry
 
-## Overview
+> **Enterprise Training Repository – Accenture | July 2026**
 
-This folder contains the datasets and reference documents used for the **Agentic AI Training Program**. These files are intended for hands-on labs, Retrieval-Augmented Generation (RAG) implementations, document intelligence exercises, enterprise search, and capstone projects.
+Welcome to the **Agentic AI with Azure AI Foundry** training repository. This repository contains all course materials, hands-on labs, datasets, sample code, and capstone projects used during the instructor-led training program.
 
-The datasets simulate a real-world enterprise environment and enable participants to build AI agents capable of understanding, retrieving, and responding to organizational knowledge.
-
----
-
-## Dataset Contents
-
-| File Name | Description |
-|-----------|-------------|
-| ABC Technologies-HR policy doc.pdf | HR policies and employee guidelines |
-| HR POLICY DOCUMENT.pdf | Human Resources policies and procedures |
-| HR-Employee_Records.xlsx | Sample employee master data |
-| IT Support Knowledge Base_111.pdf | IT support knowledge articles and FAQs |
-| IT Usage_Security Policy.pdf | IT security and acceptable usage policies |
-| Professional_Etiquette_in_IT.pdf | Professional workplace etiquette and best practices |
+The training is designed to provide participants with practical experience in building enterprise-grade AI agents using Azure AI Foundry, Azure OpenAI, Retrieval-Augmented Generation (RAG), Multi-Agent Systems, and modern AI orchestration frameworks.
 
 ---
 
-## Learning Objectives
+# 📚 Course Overview
 
-Participants will learn how to:
+This training focuses on designing and developing intelligent AI agents capable of:
 
-- Build enterprise AI assistants
-- Implement Retrieval-Augmented Generation (RAG)
-- Perform semantic document search
-- Create document-aware AI agents
-- Query structured Excel datasets
-- Develop enterprise knowledge assistants
-- Build HR and IT support copilots
+- Understanding natural language
+- Reasoning and planning tasks
+- Using enterprise tools and APIs
+- Retrieving information from organizational knowledge bases
+- Collaborating with other AI agents
+- Automating business workflows
+- Following Responsible AI principles
 
 ---
 
-## Hands-on Labs
+# 🎯 Learning Objectives
 
-The datasets are used in the following practical exercises:
+After completing this training, participants will be able to:
 
-- Document Intelligence
-- Enterprise Knowledge Search
-- RAG Pipeline Development
-- Vector Database Creation
-- Embedding Generation
-- AI Chat with Enterprise Documents
-- HR Assistant
+- Understand Agentic AI concepts and architecture
+- Build AI applications using Azure AI Foundry
+- Develop Retrieval-Augmented Generation (RAG) solutions
+- Create enterprise AI assistants
+- Implement Multi-Agent Systems
+- Connect AI agents to enterprise tools and APIs
+- Use Model Context Protocol (MCP)
+- Implement memory-aware AI agents
+- Build production-ready enterprise AI solutions
+
+---
+
+# 🗓️ Course Schedule
+
+| Day | Topics |
+|------|--------|
+| **Day 1** | Agentic AI Foundations, Azure AI Foundry Setup, Prompt Engineering |
+| **Day 2** | Enterprise Architecture, RAG, Vector Databases, Azure AI Search |
+| **Day 3** | AI Agent Development, Tool Calling, Function Calling, Azure AI Agents |
+| **Day 4** | Multi-Agent Systems, MCP, Memory, Enterprise Agent Orchestration |
+| **Capstone** | End-to-End Enterprise Agentic AI Solution |
+
+---
+
+# 📂 Repository Structure
+
+```text
+Agentic-AI-Accenture-July20th/
+│
+├── README.md
+│
+├── DAY1/
+│   ├── Training Slides
+│   ├── Labs
+│   └── README.md
+│
+├── DAY2/
+│   ├── Training Slides
+│   ├── Labs
+│   └── README.md
+│
+├── DAY3/
+│   ├── Labs
+│   └── README.md
+│
+├── DAY4/
+│   ├── Labs
+│   └── README.md
+│
+├── Datasets/
+│   ├── HR Documents
+│   ├── IT Knowledge Base
+│   ├── Employee Records
+│   └── README.md
+│
+└── Capstone-Projects/
+    ├── Project Resources
+    └── README.md
+```
+
+---
+
+# 📖 Modules Covered
+
+## Day 1 – Agentic AI Foundations
+
+- Introduction to Generative AI
+- Large Language Models (LLMs)
+- Azure AI Foundry
+- Azure OpenAI
+- Prompt Engineering
+- Responsible AI
+- Environment Setup
+
+---
+
+## Day 2 – Enterprise AI Architecture
+
+- Retrieval-Augmented Generation (RAG)
+- Embeddings
+- Vector Databases
+- Azure AI Search
+- Enterprise Knowledge Bases
+- Semantic Search
+- AI Evaluation
+
+---
+
+## Day 3 – AI Agent Development
+
+- AI Agent Fundamentals
+- Azure AI Agent Service
+- Tool Calling
+- Function Calling
+- Enterprise Integrations
+- AI Workflow Automation
+
+---
+
+## Day 4 – Multi-Agent Systems
+
+- Multi-Agent Architecture
+- Agent Collaboration
+- AI Memory
+- Model Context Protocol (MCP)
+- Enterprise Automation
+- Human-in-the-Loop
+- Responsible AI
+
+---
+
+# 💻 Hands-on Labs
+
+Participants will complete practical exercises covering:
+
+- Azure AI Foundry
+- Azure OpenAI
+- Prompt Engineering
+- RAG Implementation
+- Vector Search
+- AI Agents
+- Tool Calling
+- Enterprise APIs
+- AI Memory
+- Multi-Agent Systems
+- Enterprise Knowledge Assistants
+
+---
+
+# 🏢 Enterprise Use Cases
+
+The labs and capstone projects are based on real-world business scenarios, including:
+
+- Human Resources Assistant
 - IT Helpdesk Assistant
-- Multi-Agent Workflows
-- Capstone Projects
+- Customer Service Copilot
+- Sales Assistant
+- Finance Assistant
+- Procurement Assistant
+- Enterprise Knowledge Search
+- Policy & Compliance Assistant
+- Document Intelligence
+- Intelligent Workflow Automation
 
 ---
 
-## Example Use Cases
-
-### HR Assistant
-
-- Leave policy lookup
-- Work-from-home policy
-- Employee handbook queries
-- HR document summarization
-
-### IT Support Assistant
-
-- Password reset guidance
-- VPN troubleshooting
-- Security policy questions
-- IT knowledge retrieval
-
-### Enterprise Search
-
-- Search across multiple PDF documents
-- Retrieve policy information
-- Generate contextual responses
-- Answer employee questions
-
----
-
-## Technologies Supported
-
-These datasets can be used with:
+# 🛠️ Technologies Used
 
 - Azure AI Foundry
 - Azure OpenAI Service
-- Microsoft Copilot Studio
-- Amazon Bedrock
-- Google Gemini
+- Azure AI Search
+- Azure AI Agent Service
+- Python 3.11+
+- Visual Studio Code
+- Jupyter Notebook
 - LangChain
 - LangGraph
 - Semantic Kernel
-- LlamaIndex
-- FAISS
-- ChromaDB
-- Pinecone
-- Azure AI Search
+- Model Context Protocol (MCP)
+- Git & GitHub
 
 ---
 
-## Folder Structure
+# 📁 Datasets
 
-```
-Datasets/
-│
-├── ABC Technologies-HR policy doc.pdf
-├── HR POLICY DOCUMENT.pdf
-├── HR-Employee_Records.xlsx
-├── IT Support Knowledge Base_111.pdf
-├── IT Usage_Security Policy.pdf
-├── Professional_Etiquette_in_IT.pdf
-└── README.md
-```
+The **Datasets** folder contains sample enterprise documents used throughout the labs.
 
----
+Examples include:
 
-## Recommended Usage
+- HR Policies
+- Employee Records
+- IT Support Knowledge Base
+- IT Security Policies
+- Professional Workplace Guidelines
 
-1. Upload the documents into your AI knowledge base.
-2. Chunk and index the documents.
-3. Generate embeddings.
-4. Store embeddings in a vector database.
-5. Build an AI agent to answer user queries.
-6. Evaluate the responses using enterprise scenarios.
+These datasets are used to build enterprise RAG solutions and intelligent AI assistants.
 
 ---
 
-## Target Audience
+# 🚀 Capstone Projects
+
+Participants will apply their learning by building a complete enterprise Agentic AI solution.
+
+Example projects include:
+
+- Enterprise HR Assistant
+- IT Support AI Agent
+- Customer Service Copilot
+- Multi-Agent Knowledge Assistant
+- Enterprise Search Platform
+
+---
+
+# 📋 Prerequisites
+
+Participants should have:
+
+- Basic programming knowledge (Python recommended)
+- Basic understanding of REST APIs
+- Familiarity with Git and GitHub
+- An Azure subscription (recommended)
+- Visual Studio Code installed
+
+---
+
+# 🎓 Target Audience
+
+This training is suitable for:
 
 - AI Engineers
+- Software Developers
+- Solution Architects
+- Cloud Engineers
 - Data Engineers
 - Machine Learning Engineers
-- Solution Architects
-- Software Developers
 - Technical Consultants
-- Enterprise AI Practitioners
+- Enterprise Architects
 
 ---
 
-## Training Program
+# 📚 Recommended References
 
-This dataset is part of the **Agentic AI Training Program** and is intended solely for educational, demonstration, and hands-on laboratory purposes.
+- Microsoft Learn – Azure AI Foundry
+- Azure OpenAI Documentation
+- Azure AI Search Documentation
+- OpenAI API Documentation
+- LangChain Documentation
+- LangGraph Documentation
+- Semantic Kernel Documentation
+- Model Context Protocol (MCP) Specification
 
 ---
 
-## License
+# 📄 License
 
-These datasets are provided exclusively for training and demonstration purposes. They should not be used for commercial production workloads without appropriate authorization.
+This repository and its contents are provided exclusively for instructor-led training, learning, demonstration, and proof-of-concept purposes.
+
+Do not redistribute or use the materials for commercial purposes without prior authorization from the repository owner.
 
 ---
 
-**Author:** AVYUKTI TECH PRIVATE LIMITED  
-**Repository:** Agentic-AI-Accenture-July20th
+# 👨‍💻 Maintained By
+
+**AVYUKTI TECH PRIVATE LIMITED**
+
+Enterprise AI • Agentic AI • Azure AI Foundry • Generative AI • Intelligent Automation
+
+---
+
+## ⭐ Acknowledgements
+
+Special thanks to all participants, trainers, and contributors who support continuous learning and innovation in Enterprise AI and Agentic AI technologies.
+
+**Happy Learning! 🚀**
