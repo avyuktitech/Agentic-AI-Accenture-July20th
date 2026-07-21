@@ -1,0 +1,108 @@
+[NbConvertApp] Converting notebook a2a_server.ipynb to notebook
+C:\Users\xsr89\AppData\Roaming\Python\Python311\site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Scripts\jupyter-nbconvert.EXE\__main__.py", line 7, in <module>
+  File "C:\Users\xsr89\AppData\Roaming\Python\Python311\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\traitlets\config\application.py", line 1075, in launch_instance
+    app.start()
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\nbconvert\exporters\notebook.py", line 36, in from_notebook_node
+    nb_copy, resources = super().from_notebook_node(nb, resources, **kw)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\nbconvert\exporters\exporter.py", line 154, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\nbconvert\exporters\exporter.py", line 353, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\nbconvert\preprocessors\base.py", line 48, in __call__
+    return self.preprocess(nb, resources)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\nbconvert\preprocessors\execute.py", line 103, in preprocess
+    self.preprocess_cell(cell, resources, index)
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\nbconvert\preprocessors\execute.py", line 124, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xsr89\AppData\Roaming\Python\Python311\site-packages\jupyter_core\utils\__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\nbclient\client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\nbclient\client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+connection_id = ""
+
+async for connection in project_client.connections.list():
+    if connection.name == mcp_server_name:
+        connection_id = connection.id
+        break
+
+print(f"The MCP Server Connection ID is: {connection_id}")
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mHttpResponseError[39m                         Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[4][39m[32m, line 3[39m
+[32m      1[39m connection_id = [33m"[39m[33m"[39m
+[32m----> [39m[32m3[39m [38;5;28;01masync[39;00m [38;5;28;01mfor[39;00m connection [38;5;129;01min[39;00m project_client.connections.list():
+[32m      4[39m     [38;5;28;01mif[39;00m connection.name == mcp_server_name:
+[32m      5[39m         connection_id = connection.id
+
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python311\Lib\site-packages\azure\core\async_paging.py:142[39m, in [36mAsyncItemPaged.__anext__[39m[34m(self)[39m
+[32m    140[39m [38;5;28;01mif[39;00m [38;5;28mself[39m._page_iterator [38;5;129;01mis[39;00m [38;5;28;01mNone[39;00m:
+[32m    141[39m     [38;5;28mself[39m._page_iterator = [38;5;28mself[39m.by_page()
+[32m--> [39m[32m142[39m     [38;5;28;01mreturn[39;00m [38;5;28;01mawait[39;00m [38;5;28mself[39m.[34m__anext__[39m()
+[32m    143[39m [38;5;28;01mif[39;00m [38;5;28mself[39m._page [38;5;129;01mis[39;00m [38;5;28;01mNone[39;00m:
+[32m    144[39m     [38;5;66;03m# Let it raise StopAsyncIteration[39;00m
+[32m    145[39m     [38;5;28mself[39m._page = [38;5;28;01mawait[39;00m [38;5;28mself[39m._page_iterator.[34m__anext__[39m()
+
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python311\Lib\site-packages\azure\core\async_paging.py:145[39m, in [36mAsyncItemPaged.__anext__[39m[34m(self)[39m
+[32m    142[39m     [38;5;28;01mreturn[39;00m [38;5;28;01mawait[39;00m [38;5;28mself[39m.[34m__anext__[39m()
+[32m    143[39m [38;5;28;01mif[39;00m [38;5;28mself[39m._page [38;5;129;01mis[39;00m [38;5;28;01mNone[39;00m:
+[32m    144[39m     [38;5;66;03m# Let it raise StopAsyncIteration[39;00m
+[32m--> [39m[32m145[39m     [38;5;28mself[39m._page = [38;5;28;01mawait[39;00m [38;5;28mself[39m._page_iterator.[34m__anext__[39m()
+[32m    146[39m     [38;5;28;01mreturn[39;00m [38;5;28;01mawait[39;00m [38;5;28mself[39m.[34m__anext__[39m()
+[32m    147[39m [38;5;28;01mtry[39;00m:
+
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python311\Lib\site-packages\azure\core\async_paging.py:94[39m, in [36mAsyncPageIterator.__anext__[39m[34m(self)[39m
+[32m     92[39m     [38;5;28;01mraise[39;00m [38;5;167;01mStopAsyncIteration[39;00m([33m"[39m[33mEnd of paging[39m[33m"[39m)
+[32m     93[39m [38;5;28;01mtry[39;00m:
+[32m---> [39m[32m94[39m     [38;5;28mself[39m._response = [38;5;28;01mawait[39;00m [38;5;28mself[39m._get_next([38;5;28mself[39m.continuation_token)
+[32m     95[39m [38;5;28;01mexcept[39;00m AzureError [38;5;28;01mas[39;00m error:
+[32m     96[39m     [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m error.continuation_token:
+
+[36mFile [39m[32m~\AppData\Local\Programs\Python\Python311\Lib\site-packages\azure\ai\projects\aio\operations\_operations.py:3275[39m, in [36mConnectionsOperations.list.<locals>.get_next[39m[34m(next_link)[39m
+[32m   3273[39m [38;5;28;01mif[39;00m response.status_code [38;5;129;01mnot[39;00m [38;5;129;01min[39;00m [[32m200[39m]:
+[32m   3274[39m     map_error(status_code=response.status_code, response=response, error_map=error_map)
+[32m-> [39m[32m3275[39m     [38;5;28;01mraise[39;00m HttpResponseError(response=response)
+[32m   3277[39m [38;5;28;01mreturn[39;00m pipeline_response
+
+[31mHttpResponseError[39m: (Tenant provided in token does not match resource token) Token tenant fe7a2f73-b4fb-460a-aa99-2b37241248f1 does not match resource tenant.
+Code: Tenant provided in token does not match resource token
+Message: Token tenant fe7a2f73-b4fb-460a-aa99-2b37241248f1 does not match resource tenant.
+

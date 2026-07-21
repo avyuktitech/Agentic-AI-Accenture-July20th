@@ -1,0 +1,35 @@
+Project Endpoint:  https://prakashfoundry111.services.ai.azure.com/api/projects/prakash-proj-111
+Model:  gpt-5
+Mermaid Diagram:
+ flowchart TD
+  LocationSelector["LocationSelector (Start)"];
+  DestinationRecommender["DestinationRecommender"];
+  Weather["Weather"];
+  CuisineSuggestion["CuisineSuggestion"];
+  ItineraryPlanner["ItineraryPlanner"];
+  fan_in__ItineraryPlanner__ca5ba06d((fan-in))
+  CuisineSuggestion --> fan_in__ItineraryPlanner__ca5ba06d;
+  DestinationRecommender --> fan_in__ItineraryPlanner__ca5ba06d;
+  Weather --> fan_in__ItineraryPlanner__ca5ba06d;
+  fan_in__ItineraryPlanner__ca5ba06d --> ItineraryPlanner;
+  internal_LocationSelector --> LocationSelector;
+  internal_DestinationRecommender --> DestinationRecommender;
+  internal_Weather --> Weather;
+  internal_CuisineSuggestion --> CuisineSuggestion;
+  LocationSelector --> DestinationRecommender;
+  LocationSelector --> Weather;
+  LocationSelector --> CuisineSuggestion;
+  internal_ItineraryPlanner --> ItineraryPlanner;
+INFO:     127.0.0.1:64930 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60811 - "GET /meta HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60811 - "GET /v1/entities HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60811 - "GET /v1/entities/workflow_in_memory_vacation-planner-workflow_6137fba3b3f34e20897032d1ef40fe35/info?type=workflow HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60811 - "GET /v1/conversations?entity_id=workflow_in_memory_vacation-planner-workflow_6137fba3b3f34e20897032d1ef40fe35&type=workflow_session HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60811 - "POST /v1/conversations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49335 - "POST /v1/responses HTTP/1.1" 200 OK
+Location-Picker-Agent client initialized in the DevUI event loop.
+Destination-Recommender-Agent client initialized in the DevUI event loop.
+Weather-Agent client initialized in the DevUI event loop.
+Cuisine-Suggestion-Agent client initialized in the DevUI event loop.
+Waiting 10s before final itinerary call to avoid rate limits...
+Itinerary-Planner-Agent client initialized in the DevUI event loop.

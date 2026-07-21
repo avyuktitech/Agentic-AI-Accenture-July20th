@@ -1,0 +1,993 @@
+Starting Sequential Research & Writing Workflow
+Available at: http://localhost:8090
+Entity ID: workflow_sequential_research_writer
+AzureCliCredential.get_token_info succeeded
+HTTP Request: POST https://prakashfoundry111.services.ai.azure.com/api/projects/prakash-proj-111/openai/conversations?api-version=2025-11-15-preview "HTTP/1.1 200 OK"
+AzureCliCredential.get_token_info succeeded
+HTTP Request: POST https://prakashfoundry111.services.ai.azure.com/api/projects/prakash-proj-111/openai/conversations?api-version=2025-11-15-preview "HTTP/1.1 200 OK"
+Adding an edge with Executor or AgentProtocol instances directly is not recommended, because workflow instances created from the builder will share the same executor/agent instances. Consider using a registered name for lazy initialization instead.
+Dead-end executors detected (no outgoing edges): ['WriterExecutor']. Verify these are intended as final nodes in the workflow.
+Set ENABLE_OTEL=true for tracing
+Set ENABLE_SENSITIVE_DATA=true for tracing
+Set OTLP_ENDPOINT=http://localhost:4317 for tracing
+Registering 1 in-memory entities
+Starting Agent Framework DevUI on 127.0.0.1:8090
+INFO:     Started server process [47484]
+INFO:     Waiting for application startup.
+Starting Agent Framework Server
+Initializing Agent Framework executor...
+Set up TracerProvider for server tracing
+Overriding of current TracerProvider is not allowed
+Enabled Agent Framework observability
+No Agent Framework entities directory configured
+Discovered 0 entities from directory
+Registered in-memory entity: workflow_in_memory_sequential-research-&-writing-workflow_d25a627aafa945f5aeca3b94196e1bf6
+Total entities available: 1
+OpenAI proxy mode available (OPENAI_API_KEY configured)
+Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<AsyncClient.aclose() done, defined at C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py:1978> exception=RuntimeError('Event loop is closed')>
+Traceback (most recent call last):
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 1985, in aclose
+    await self._transport.aclose()
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_transports\default.py", line 406, in aclose
+    await self._pool.aclose()
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_async\connection_pool.py", line 353, in aclose
+    await self._close_connections(closing_connections)
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_async\connection_pool.py", line 345, in _close_connections
+    await connection.aclose()
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_async\connection.py", line 173, in aclose
+    await self._connection.aclose()
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_async\http11.py", line 258, in aclose
+    await self._network_stream.aclose()
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_backends\anyio.py", line 53, in aclose
+    await self._stream.aclose()
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\tls.py", line 241, in aclose
+    await self.transport_stream.aclose()
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 1352, in aclose
+    self._transport.close()
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 109, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 762, in call_soon
+    self._check_closed()
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 520, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+Task exception was never retrieved
+future: <Task finished name='Task-19' coro=<AsyncClient.aclose() done, defined at C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py:1978> exception=RuntimeError('Event loop is closed')>
+Traceback (most recent call last):
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_client.py", line 1985, in aclose
+    await self._transport.aclose()
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpx\_transports\default.py", line 406, in aclose
+    await self._pool.aclose()
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_async\connection_pool.py", line 353, in aclose
+    await self._close_connections(closing_connections)
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_async\connection_pool.py", line 345, in _close_connections
+    await connection.aclose()
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_async\connection.py", line 173, in aclose
+    await self._connection.aclose()
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_async\http11.py", line 258, in aclose
+    await self._network_stream.aclose()
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\httpcore\_backends\anyio.py", line 53, in aclose
+    await self._stream.aclose()
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\streams\tls.py", line 241, in aclose
+    await self.transport_stream.aclose()
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\site-packages\anyio\_backends\_asyncio.py", line 1352, in aclose
+    self._transport.close()
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 109, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 762, in call_soon
+    self._check_closed()
+  File "C:\Users\xsr89\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 520, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8090 (Press CTRL+C to quit)
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.17s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Raw request body: {"metadata":{"entity_id":"workflow_in_memory_sequential-research-&-writing-workflow_d25a627aafa945f5aeca3b94196e1bf6"},"input":"{\"input\":\" Write a short essay on how artificial intelligence is changing education.\"}","stream":true,"conversation":"conv_a40525d5a7154fb3bc6d84dfc9599af7"}
+Parsed request: metadata={'entity_id': 'workflow_in_memory_sequential-research-&-writing-workflow_d25a627aafa945f5aeca3b94196e1bf6'}
+Extracted entity_id: workflow_in_memory_sequential-research-&-writing-workflow_d25a627aafa945f5aeca3b94196e1bf6
+Found entity: Sequential Research & Writing Workflow (workflow)
+[CANCELLATION] Creating response resp_d85a423a for entity workflow_in_memory_sequential-research-&-writing-workflow_d25a627aafa945f5aeca3b94196e1bf6
+Executing workflow: workflow_in_memory_sequential-research-&-writing-workflow_d25a627aafa945f5aeca3b94196e1bf6
+Starting fresh workflow in session conv_a40525d5a7154fb3bc6d84dfc9599af7
+{'type': 'chat_message', 'role': {'type': 'role', 'value': 'system'}, 'contents': [{'type': 'text', 'text': 'You are a knowledgeable researcher. Gather useful facts and insights on the topic. Keep the research summary concise, practical, and under 300 words.'}], 'additional_properties': {}}
+{'type': 'chat_message', 'role': {'type': 'role', 'value': 'user'}, 'contents': [{'type': 'text', 'text': ' Write a short essay on how artificial intelligence is changing education.'}], 'additional_properties': {}}
+{'type': 'chat_message', 'role': {'type': 'role', 'value': 'user'}, 'contents': [{'type': 'text', 'text': ' Write a short essay on how artificial intelligence is changing education.'}], 'additional_properties': {}}
+AzureCliCredential.get_token_info succeeded
+Request URL: 'https://prakashfoundry111.services.ai.azure.com/api/projects/prakash-proj-111/agents/Researcher-Agent/versions?api-version=REDACTED'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '221'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '2dd7cc27-853e-11f1-9615-9c67d6ecbe0d'
+    'User-Agent': 'azsdk-python-ai-projects/2.0.0b2 Python/3.11.9 (Windows-10-10.0.26200-SP0)'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Content-Encoding': 'REDACTED'
+    'Vary': 'REDACTED'
+    'request-context': 'REDACTED'
+    'x-ms-response-type': 'REDACTED'
+    'x-request-id': 'REDACTED'
+    'api-supported-versions': 'REDACTED'
+    'azureml-served-by-cluster': 'REDACTED'
+    'apim-request-id': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-content-type-options': 'REDACTED'
+    'x-ms-region': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Date': 'Tue, 21 Jul 2026 19:55:54 GMT'
+AzureCliCredential.get_token_info succeeded
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.84s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+HTTP Request: POST https://prakashfoundry111.services.ai.azure.com/api/projects/prakash-proj-111/openai/responses?api-version=2025-11-15-preview "HTTP/1.1 200 OK"
+{'type': 'chat_message', 'role': {'type': 'role', 'value': 'assistant'}, 'contents': [{'type': 'text', 'text': 'Artificial intelligence is moving from the back office of education to the front line of teaching and learning. Adaptive platforms and intelligent tutoring systems deliver practice at the right level and pace, while generative tools give students instant feedback on writing, coding, math solutions, and language speaking practice. Language apps now simulate conversation partners; reading and math tools surface misconceptions in real time; and learning analytics flag students who may need support long before a summative exam.\n\nTeachers benefit as well. AI speeds routine tasks—drafting lesson plans,'}], 'additional_properties': {}}
+{'type': 'chat_message', 'role': {'type': 'role', 'value': 'assistant'}, 'contents': [{'type': 'text', 'text': 'Artificial intelligence is moving from the back office of education to the front line of teaching and learning. Adaptive platforms and intelligent tutoring systems deliver practice at the right level and pace, while generative tools give students instant feedback on writing, coding, math solutions, and language speaking practice. Language apps now simulate conversation partners; reading and math tools surface misconceptions in real time; and learning analytics flag students who may need support long before a summative exam.\n\nTeachers benefit as well. AI speeds routine tasks—drafting lesson plans,'}], 'author_name': 'Researcher-Agent', 'additional_properties': {}}
+Yielding pre-loop events
+Creating checkpoint after initial execution
+Created checkpoint 1838a4e6-fcc4-40c2-86f9-5ea93af0641e for workflow 376adcdd-2d0d-4536-9b0e-eb362571a14c
+Created after_initial_execution checkpoint: 1838a4e6-fcc4-40c2-86f9-5ea93af0641e
+Starting superstep 1
+{'type': 'chat_message', 'role': {'type': 'role', 'value': 'system'}, 'contents': [{'type': 'text', 'text': 'You are a clear writer. Turn the research into a coherent short essay. Keep the final essay focused and under 500 words.'}], 'additional_properties': {}}
+{'type': 'chat_message', 'role': {'type': 'role', 'value': 'user'}, 'contents': [{'type': 'text', 'text': 'Artificial intelligence is moving from the back office of education to the front line of teaching and learning. Adaptive platforms and intelligent tutoring systems deliver practice at the right level and pace, while generative tools give students instant feedback on writing, coding, math solutions, and language speaking practice. Language apps now simulate conversation partners; reading and math tools surface misconceptions in real time; and learning analytics flag students who may need support long before a summative exam.\n\nTeachers benefit as well. AI speeds routine tasks—drafting lesson plans,'}], 'additional_properties': {}}
+{'type': 'chat_message', 'role': {'type': 'role', 'value': 'user'}, 'contents': [{'type': 'text', 'text': 'Artificial intelligence is moving from the back office of education to the front line of teaching and learning. Adaptive platforms and intelligent tutoring systems deliver practice at the right level and pace, while generative tools give students instant feedback on writing, coding, math solutions, and language speaking practice. Language apps now simulate conversation partners; reading and math tools surface misconceptions in real time; and learning analytics flag students who may need support long before a summative exam.\n\nTeachers benefit as well. AI speeds routine tasks—drafting lesson plans,'}], 'additional_properties': {}}
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 0.91s.
+AzureCliCredential.get_token_info succeeded
+Request URL: 'https://prakashfoundry111.services.ai.azure.com/api/projects/prakash-proj-111/agents/Writer-Agent/versions?api-version=REDACTED'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '192'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '35f4cbdb-853e-11f1-80be-9c67d6ecbe0d'
+    'User-Agent': 'azsdk-python-ai-projects/2.0.0b2 Python/3.11.9 (Windows-10-10.0.26200-SP0)'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+Response status: 200
+Response headers:
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Content-Encoding': 'REDACTED'
+    'Vary': 'REDACTED'
+    'request-context': 'REDACTED'
+    'x-ms-response-type': 'REDACTED'
+    'x-request-id': 'REDACTED'
+    'api-supported-versions': 'REDACTED'
+    'azureml-served-by-cluster': 'REDACTED'
+    'apim-request-id': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-content-type-options': 'REDACTED'
+    'x-ms-region': 'REDACTED'
+    'Access-Control-Expose-Headers': 'REDACTED'
+    'Date': 'Tue, 21 Jul 2026 19:56:07 GMT'
+AzureCliCredential.get_token_info succeeded
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.08s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.95s.
+HTTP Request: POST https://prakashfoundry111.services.ai.azure.com/api/projects/prakash-proj-111/openai/responses?api-version=2025-11-15-preview "HTTP/1.1 200 OK"
+{'type': 'chat_message', 'role': {'type': 'role', 'value': 'assistant'}, 'contents': [{'type': 'text', 'text': 'Artificial intelligence is moving from the back office of education to the front line of teaching and learning. Adaptive platforms and intelligent tutoring systems now personalize practice at the right level and pace, while generative tools give students instant feedback on writing, code, math solutions, and spoken language. Language apps simulate conversation partners; reading and math tools surface misconceptions in real time; and learning analytics flag students who may need support long before a summative exam. The promise is not just efficiency, but finer-grained responsiveness—minute-by-minute adjustments that were once impossible in crowded classrooms.\n\nTeachers benefit as well. AI speeds routine work—drafting lesson plans and rubrics, generating exemplar problems, differentiating materials, summarizing student work, and translating communications—freeing time for feedback and relationships. It can suggest scaffolds for diverse learners, propose multiple modalities, and help align tasks to standards. Used well, these assistants shift teacher effort from production to curation and interpretation.\n\nYet moving AI to the instructional core raises new responsibilities. Automated feedback can be fast but confidently wrong; dashboards can overfit to what is easy to measure. Without careful design, AI may widen inequities, privileging students with stronger devices, connectivity, or prior knowledge. Data privacy, consent, and transparency matter, as do the risks of bias embedded in models and training data. Schools need clear guardrails: what data is collected, who can access it, how long it is retained, and how students and families can opt out.\n\nThe teacher’s role evolves rather than disappears. In AI-rich classrooms, educators become designers of learning experiences, coaches of metacognition, and ethical stewards. They teach students to question sources, verify outputs, and use AI to extend—not replace—their own thinking. Professional learning should pair technical know-how with pedagogical strategies: when to trust a hint, how to calibrate difficulty, how to combine human and machine feedback, and how to assess understanding beyond what a model can generate.\n\nImplementation should start small and focus on impact. Pilot high-value use cases—targeted practice, formative feedback, multilingual access—then evaluate with clear metrics for learning, equity, and teacher workload. Involve students and families in setting norms. Make AI-visible: explain how suggestions are generated and where human judgment intervenes.\n\nIf we treat AI as an amplifier of good pedagogy rather than a shortcut around it, the result can be more human learning: classrooms with more time for inquiry, clearer insight into student thinking, and fairer, earlier support for those who need it.'}], 'additional_properties': {}}
+{'type': 'chat_message', 'role': {'type': 'role', 'value': 'assistant'}, 'contents': [{'type': 'text', 'text': 'Artificial intelligence is moving from the back office of education to the front line of teaching and learning. Adaptive platforms and intelligent tutoring systems now personalize practice at the right level and pace, while generative tools give students instant feedback on writing, code, math solutions, and spoken language. Language apps simulate conversation partners; reading and math tools surface misconceptions in real time; and learning analytics flag students who may need support long before a summative exam. The promise is not just efficiency, but finer-grained responsiveness—minute-by-minute adjustments that were once impossible in crowded classrooms.\n\nTeachers benefit as well. AI speeds routine work—drafting lesson plans and rubrics, generating exemplar problems, differentiating materials, summarizing student work, and translating communications—freeing time for feedback and relationships. It can suggest scaffolds for diverse learners, propose multiple modalities, and help align tasks to standards. Used well, these assistants shift teacher effort from production to curation and interpretation.\n\nYet moving AI to the instructional core raises new responsibilities. Automated feedback can be fast but confidently wrong; dashboards can overfit to what is easy to measure. Without careful design, AI may widen inequities, privileging students with stronger devices, connectivity, or prior knowledge. Data privacy, consent, and transparency matter, as do the risks of bias embedded in models and training data. Schools need clear guardrails: what data is collected, who can access it, how long it is retained, and how students and families can opt out.\n\nThe teacher’s role evolves rather than disappears. In AI-rich classrooms, educators become designers of learning experiences, coaches of metacognition, and ethical stewards. They teach students to question sources, verify outputs, and use AI to extend—not replace—their own thinking. Professional learning should pair technical know-how with pedagogical strategies: when to trust a hint, how to calibrate difficulty, how to combine human and machine feedback, and how to assess understanding beyond what a model can generate.\n\nImplementation should start small and focus on impact. Pilot high-value use cases—targeted practice, formative feedback, multilingual access—then evaluate with clear metrics for learning, equity, and teacher workload. Involve students and families in setting norms. Make AI-visible: explain how suggestions are generated and where human judgment intervenes.\n\nIf we treat AI as an amplifier of good pedagogy rather than a shortcut around it, the result can be more human learning: classrooms with more time for inquiry, clearer insight into student thinking, and fairer, earlier support for those who need it.'}], 'author_name': 'Writer-Agent', 'additional_properties': {}}
+Completed superstep 1
+Created checkpoint c03049ab-2195-4f48-afcb-8b3f5d71b1a6 for workflow 376adcdd-2d0d-4536-9b0e-eb362571a14c
+Created superstep_1 checkpoint: c03049ab-2195-4f48-afcb-8b3f5d71b1a6
+Workflow completed after 1 supersteps
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.03s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.20s.
+Raw request body: {
+    "input":  "Explain cloud computing in two short paragraphs.",
+    "model":  "workflow_in_memory_sequential-research-\u0026-writing-workflow_d25a627aafa945f5aeca3b94196e1bf6",
+    "stream":  false
+}
+Parsed request: metadata=None
+Extracted entity_id: None
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Raw request body: {
+    "input":  "Explain cloud computing in two short paragraphs.",
+    "stream":  false,
+    "metadata":  {
+                     "entity_id":  "workflow_in_memory_sequential-research-\u0026-writing-workflow_d25a627aafa945f5aeca3b94196e1bf6"
+                 }
+}
+Parsed request: metadata={'entity_id': 'workflow_in_memory_sequential-research-&-writing-workflow_d25a627aafa945f5aeca3b94196e1bf6'}
+Extracted entity_id: workflow_in_memory_sequential-research-&-writing-workflow_d25a627aafa945f5aeca3b94196e1bf6
+Found entity: Sequential Research & Writing Workflow (workflow)
+Executing workflow: workflow_in_memory_sequential-research-&-writing-workflow_d25a627aafa945f5aeca3b94196e1bf6
+Created new workflow session: session_workflow_in_memory_sequential-research-&-writing-workflow_d25a627aafa945f5aeca3b94196e1bf6_cc3e3dd1
+Starting fresh workflow in session session_workflow_in_memory_sequential-research-&-writing-workflow_d25a627aafa945f5aeca3b94196e1bf6_cc3e3dd1
+{'type': 'chat_message', 'role': {'type': 'role', 'value': 'system'}, 'contents': [{'type': 'text', 'text': 'You are a knowledgeable researcher. Gather useful facts and insights on the topic. Keep the research summary concise, practical, and under 300 words.'}], 'additional_properties': {}}
+{'type': 'chat_message', 'role': {'type': 'role', 'value': 'user'}, 'contents': [{'type': 'text', 'text': 'Explain cloud computing in two short paragraphs.'}], 'additional_properties': {}}
+{'type': 'chat_message', 'role': {'type': 'role', 'value': 'user'}, 'contents': [{'type': 'text', 'text': 'Explain cloud computing in two short paragraphs.'}], 'additional_properties': {}}
+AzureCliCredential.get_token_info succeeded
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 0.91s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+HTTP Request: POST https://prakashfoundry111.services.ai.azure.com/api/projects/prakash-proj-111/openai/responses?api-version=2025-11-15-preview "HTTP/1.1 200 OK"
+{'type': 'chat_message', 'role': {'type': 'role', 'value': 'assistant'}, 'contents': [{'type': 'text', 'text': 'Cloud computing is the on-demand delivery of computing resources—such as servers, storage, databases, networking, and higher-level services like AI—over the internet. Providers pool infrastructure in global data centers and expose it through APIs and web consoles. Core service models include IaaS (virtual machines and storage), PaaS (managed runtime and databases), and SaaS (complete applications), delivered via public, private, hybrid, or multi-cloud deployments. Under the hood, virtualization, containers, orchestration, autoscaling, and serverless platforms dynamically allocate capacity, while CDNs and multiple regions bring services closer to users.\n\nThe appeal is elasticity, faster time to market, and pay-as-you-go pricing, plus access to managed services and built-in reliability and security features. Trade-offs include shared-responsibility security, data residency and compliance requirements, potential vendor lock-in, variable costs (notably data egress), and operational complexity. Good practice emphasizes resilient design (multi-AZ/region), encryption and strong identity controls, backups and disaster recovery, observability, and cost governance (FinOps). Edge computing complements the cloud by placing compute near devices for low-latency workloads.'}], 'additional_properties': {}}
+{'type': 'chat_message', 'role': {'type': 'role', 'value': 'assistant'}, 'contents': [{'type': 'text', 'text': 'Cloud computing is the on-demand delivery of computing resources—such as servers, storage, databases, networking, and higher-level services like AI—over the internet. Providers pool infrastructure in global data centers and expose it through APIs and web consoles. Core service models include IaaS (virtual machines and storage), PaaS (managed runtime and databases), and SaaS (complete applications), delivered via public, private, hybrid, or multi-cloud deployments. Under the hood, virtualization, containers, orchestration, autoscaling, and serverless platforms dynamically allocate capacity, while CDNs and multiple regions bring services closer to users.\n\nThe appeal is elasticity, faster time to market, and pay-as-you-go pricing, plus access to managed services and built-in reliability and security features. Trade-offs include shared-responsibility security, data residency and compliance requirements, potential vendor lock-in, variable costs (notably data egress), and operational complexity. Good practice emphasizes resilient design (multi-AZ/region), encryption and strong identity controls, backups and disaster recovery, observability, and cost governance (FinOps). Edge computing complements the cloud by placing compute near devices for low-latency workloads.'}], 'author_name': 'Researcher-Agent', 'additional_properties': {}}
+Yielding pre-loop events
+Creating checkpoint after initial execution
+Created checkpoint fc89f813-e3e4-49aa-987c-f7975d6cccf3 for workflow 376adcdd-2d0d-4536-9b0e-eb362571a14c
+Created after_initial_execution checkpoint: fc89f813-e3e4-49aa-987c-f7975d6cccf3
+Starting superstep 1
+{'type': 'chat_message', 'role': {'type': 'role', 'value': 'system'}, 'contents': [{'type': 'text', 'text': 'You are a clear writer. Turn the research into a coherent short essay. Keep the final essay focused and under 500 words.'}], 'additional_properties': {}}
+{'type': 'chat_message', 'role': {'type': 'role', 'value': 'user'}, 'contents': [{'type': 'text', 'text': 'Cloud computing is the on-demand delivery of computing resources—such as servers, storage, databases, networking, and higher-level services like AI—over the internet. Providers pool infrastructure in global data centers and expose it through APIs and web consoles. Core service models include IaaS (virtual machines and storage), PaaS (managed runtime and databases), and SaaS (complete applications), delivered via public, private, hybrid, or multi-cloud deployments. Under the hood, virtualization, containers, orchestration, autoscaling, and serverless platforms dynamically allocate capacity, while CDNs and multiple regions bring services closer to users.\n\nThe appeal is elasticity, faster time to market, and pay-as-you-go pricing, plus access to managed services and built-in reliability and security features. Trade-offs include shared-responsibility security, data residency and compliance requirements, potential vendor lock-in, variable costs (notably data egress), and operational complexity. Good practice emphasizes resilient design (multi-AZ/region), encryption and strong identity controls, backups and disaster recovery, observability, and cost governance (FinOps). Edge computing complements the cloud by placing compute near devices for low-latency workloads.'}], 'additional_properties': {}}
+{'type': 'chat_message', 'role': {'type': 'role', 'value': 'user'}, 'contents': [{'type': 'text', 'text': 'Cloud computing is the on-demand delivery of computing resources—such as servers, storage, databases, networking, and higher-level services like AI—over the internet. Providers pool infrastructure in global data centers and expose it through APIs and web consoles. Core service models include IaaS (virtual machines and storage), PaaS (managed runtime and databases), and SaaS (complete applications), delivered via public, private, hybrid, or multi-cloud deployments. Under the hood, virtualization, containers, orchestration, autoscaling, and serverless platforms dynamically allocate capacity, while CDNs and multiple regions bring services closer to users.\n\nThe appeal is elasticity, faster time to market, and pay-as-you-go pricing, plus access to managed services and built-in reliability and security features. Trade-offs include shared-responsibility security, data residency and compliance requirements, potential vendor lock-in, variable costs (notably data egress), and operational complexity. Good practice emphasizes resilient design (multi-AZ/region), encryption and strong identity controls, backups and disaster recovery, observability, and cost governance (FinOps). Edge computing complements the cloud by placing compute near devices for low-latency workloads.'}], 'additional_properties': {}}
+AzureCliCredential.get_token_info succeeded
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.14s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+HTTP Request: POST https://prakashfoundry111.services.ai.azure.com/api/projects/prakash-proj-111/openai/responses?api-version=2025-11-15-preview "HTTP/1.1 200 OK"
+{'type': 'chat_message', 'role': {'type': 'role', 'value': 'assistant'}, 'contents': [{'type': 'text', 'text': 'Cloud computing has transformed how organizations build and deliver software by turning computing into a utility. Instead of provisioning their own servers, teams tap shared infrastructure in global data centers through APIs and web consoles. Providers offer layers of abstraction—Infrastructure as a Service for virtual machines and storage, Platform as a Service for managed runtimes and databases, and Software as a Service for complete applications—deployed across public, private, hybrid, or multi-cloud environments to match security and governance needs.\n\nBehind the scenes, virtualization and containers slice hardware into flexible units; orchestration, autoscaling, and serverless platforms add or remove capacity as demand changes; and content delivery networks and multiple regions move data and services closer to users. This machinery delivers the cloud’s core advantages: elasticity without overprovisioning, faster time to market, and pay-as-you-go pricing. Just as important, teams gain access to managed services for data, analytics, AI, and security, as well as built-in reliability features that would be costly to replicate on-premises.\n\nThe model, however, is not a blank check. Security follows a shared-responsibility model: providers secure the cloud, but customers must secure what they run in it. Data residency and compliance requirements shape where and how data is stored. Architectures can drift toward vendor lock-in if services are tightly coupled to a single provider’s proprietary offerings. Costs can be unpredictable, especially for data egress and always-on resources, and operating distributed systems introduces new complexity.\n\nSound practice mitigates these risks. Design for resilience with multiple availability zones or regions. Encrypt data in transit and at rest, enforce strong identity and access controls, and automate backups and disaster recovery. Invest in observability—metrics, logs, and traces—to detect issues early. Treat cost as a product: instrument usage, set budgets and alerts, right-size resources, and adopt a FinOps culture that aligns engineering decisions with financial outcomes.\n\nCloud and edge increasingly work in tandem. Edge computing places processing near devices and sensors to cut latency and bandwidth, while the cloud aggregates data, trains models, and orchestrates updates at scale. Used thoughtfully, this continuum allows organizations to deliver responsive experiences, meet regulatory obligations, and innovate quickly—without losing sight of security, reliability, or cost.'}], 'additional_properties': {}}
+{'type': 'chat_message', 'role': {'type': 'role', 'value': 'assistant'}, 'contents': [{'type': 'text', 'text': 'Cloud computing has transformed how organizations build and deliver software by turning computing into a utility. Instead of provisioning their own servers, teams tap shared infrastructure in global data centers through APIs and web consoles. Providers offer layers of abstraction—Infrastructure as a Service for virtual machines and storage, Platform as a Service for managed runtimes and databases, and Software as a Service for complete applications—deployed across public, private, hybrid, or multi-cloud environments to match security and governance needs.\n\nBehind the scenes, virtualization and containers slice hardware into flexible units; orchestration, autoscaling, and serverless platforms add or remove capacity as demand changes; and content delivery networks and multiple regions move data and services closer to users. This machinery delivers the cloud’s core advantages: elasticity without overprovisioning, faster time to market, and pay-as-you-go pricing. Just as important, teams gain access to managed services for data, analytics, AI, and security, as well as built-in reliability features that would be costly to replicate on-premises.\n\nThe model, however, is not a blank check. Security follows a shared-responsibility model: providers secure the cloud, but customers must secure what they run in it. Data residency and compliance requirements shape where and how data is stored. Architectures can drift toward vendor lock-in if services are tightly coupled to a single provider’s proprietary offerings. Costs can be unpredictable, especially for data egress and always-on resources, and operating distributed systems introduces new complexity.\n\nSound practice mitigates these risks. Design for resilience with multiple availability zones or regions. Encrypt data in transit and at rest, enforce strong identity and access controls, and automate backups and disaster recovery. Invest in observability—metrics, logs, and traces—to detect issues early. Treat cost as a product: instrument usage, set budgets and alerts, right-size resources, and adopt a FinOps culture that aligns engineering decisions with financial outcomes.\n\nCloud and edge increasingly work in tandem. Edge computing places processing near devices and sensors to cut latency and bandwidth, while the cloud aggregates data, trains models, and orchestrates updates at scale. Used thoughtfully, this continuum allows organizations to deliver responsive experiences, meet regulatory obligations, and innovate quickly—without losing sight of security, reliability, or cost.'}], 'author_name': 'Writer-Agent', 'additional_properties': {}}
+Completed superstep 1
+Created checkpoint 1ec4ad7f-b154-4170-a8cc-d2300db8cbf9 for workflow 376adcdd-2d0d-4536-9b0e-eb362571a14c
+Created superstep_1 checkpoint: 1ec4ad7f-b154-4170-a8cc-d2300db8cbf9
+Workflow completed after 1 supersteps
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.01s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.93s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.83s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.88s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.93s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.16s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.12s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.10s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.97s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.96s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.53s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.06s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.09s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.00s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.83s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.03s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.92s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.85s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.90s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.02s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.10s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.97s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.08s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.36s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.92s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.08s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.87s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.18s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.97s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.25s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.90s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.84s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 3.91s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.06s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.47s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.08s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.77s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.12s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.02s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.72s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.85s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.83s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.94s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.62s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.09s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.06s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.20s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.89s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 4.40s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.00s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.81s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.04s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.57s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.92s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.80s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 0.96s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.17s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.83s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.84s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.86s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.92s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.42s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.96s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 0.99s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.45s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 2.33s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.38s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.99s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.08s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.12s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.48s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.82s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 0.85s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.20s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.09s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.41s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.03s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.82s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.94s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.81s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 4.27s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.06s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.11s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.92s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.11s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.00s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.84s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.13s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.02s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.12s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.06s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.14s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.06s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.02s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.16s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.93s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.93s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.12s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.92s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.15s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.85s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.81s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.14s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.18s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 2.24s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.81s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.00s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.80s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.06s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.08s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 2.00s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.00s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.11s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.04s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.19s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 2.40s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.42s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.85s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.06s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.09s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.35s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.97s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 0.89s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.81s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.84s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.98s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 2.02s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.26s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 2.28s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.94s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.23s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.19s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.75s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.75s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 2.33s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.12s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.86s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.62s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.86s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.14s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.72s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.05s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 2.08s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.36s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.84s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 2.26s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.32s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 2.26s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.22s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.97s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.60s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.76s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.84s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.36s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.19s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.54s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.01s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.78s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.97s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.33s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 2.36s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 4.70s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.60s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.08s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.96s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.84s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 2.14s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.11s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.87s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.11s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.12s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.95s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 4.24s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.09s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.05s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.84s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.01s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.19s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 2.35s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.13s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.07s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.20s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.87s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.01s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.05s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.09s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.01s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.82s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 2.10s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.09s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.91s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.37s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.64s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 4.13s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.61s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.86s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.42s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.16s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.63s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.60s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 4.70s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.11s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.48s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.81s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.17s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 2.02s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.79s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.93s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 2.06s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.16s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 2.39s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.10s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.92s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 0.98s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.85s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.02s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.07s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.98s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.90s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.19s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.89s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.99s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.83s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.82s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.74s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.04s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.63s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.04s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 3.90s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.42s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.85s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.67s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.02s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.67s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.74s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.90s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.10s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.71s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 2.08s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.02s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.17s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.00s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.36s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.20s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.71s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.84s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.25s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 3.71s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.91s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 2.30s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.08s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.13s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.94s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.54s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.20s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 2.03s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.57s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.91s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.12s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.91s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.44s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.95s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 4.08s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.40s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.13s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.18s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.98s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.35s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 3.35s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.85s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.33s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 3.87s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.10s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 3.82s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.18s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 4.17s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 0.92s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.83s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.17s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.03s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 0.86s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.17s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 0.94s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 3.55s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 0.85s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.03s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 0.90s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 0.97s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 4.49s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 0.83s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 2.00s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 4.56s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 2.05s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 4.71s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.99s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.60s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.52s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 3.89s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.32s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 2.15s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.68s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.02s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.99s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.33s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.10s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.24s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.62s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 4.26s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.35s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 4.41s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 2.00s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.94s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 3.96s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 2.35s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 3.36s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 0.84s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 3.41s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 0.81s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 4.51s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 0.93s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.88s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.98s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.79s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.06s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 2.20s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.64s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.05s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.77s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.16s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.87s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.12s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 3.94s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.43s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.03s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.33s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.96s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.01s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.56s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.02s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.15s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 2.40s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.99s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.01s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.80s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.65s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.84s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.20s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.87s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.12s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.89s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.41s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.81s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.01s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 2.37s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.84s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.90s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.18s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.36s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 0.96s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 0.86s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.69s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.04s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.12s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.03s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 3.32s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 0.91s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.06s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.98s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.04s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.16s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.77s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.85s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.87s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.11s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.05s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.18s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.62s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.99s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.86s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 2.23s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.20s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.05s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.95s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.77s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.14s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.17s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.89s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.15s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.17s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 3.95s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.87s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.18s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.80s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.88s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.87s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 1.90s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.97s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.87s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.90s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 3.42s.
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.13s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.85s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to localhost:4317, retrying in 4.15s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.18s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.82s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.97s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Failed to export metrics to localhost:4317, error code: StatusCode.UNAVAILABLE

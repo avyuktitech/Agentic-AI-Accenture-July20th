@@ -1,0 +1,311 @@
+Starting Vacation Planning Workflow
+Available at: http://localhost:8092
+Entity ID: workflow_vacation_planner
+Adding fan-out edges with Executor or AgentProtocol instances directly is not recommended, because workflow instances created from the builder will share the same executor/agent instances. Consider using registered names for lazy initialization instead.
+Adding fan-in edges with Executor or AgentProtocol instances directly is not recommended, because workflow instances created from the builder will share the same executor/agent instances. Consider using registered names for lazy initialization instead.
+Dead-end executors detected (no outgoing edges): ['ItineraryPlanner']. Verify these are intended as final nodes in the workflow.
+Set ENABLE_OTEL=true for tracing
+Set ENABLE_SENSITIVE_DATA=true for tracing
+Set OTLP_ENDPOINT=http://localhost:4317 for tracing
+Registering 1 in-memory entities
+Starting Agent Framework DevUI on 127.0.0.1:8092
+INFO:     Started server process [54276]
+INFO:     Waiting for application startup.
+Starting Agent Framework Server
+Initializing Agent Framework executor...
+Set up TracerProvider for server tracing
+Overriding of current TracerProvider is not allowed
+Enabled Agent Framework observability
+No Agent Framework entities directory configured
+Discovered 0 entities from directory
+Registered in-memory entity: workflow_in_memory_vacation-planner-workflow_6137fba3b3f34e20897032d1ef40fe35
+Total entities available: 1
+OpenAI proxy mode available (OPENAI_API_KEY configured)
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8092 (Press CTRL+C to quit)
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.18s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.20s.
+Raw request body: {"metadata":{"entity_id":"workflow_in_memory_vacation-planner-workflow_6137fba3b3f34e20897032d1ef40fe35"},"input":"{\"input\":\"Plan a 4-day family vacation from Bangalore. We like nature, light adventure, and vegetarian food.\\n\"}","stream":true,"conversation":"conv_01d745dd15164483985c113ad521a3f4"}
+Parsed request: metadata={'entity_id': 'workflow_in_memory_vacation-planner-workflow_6137fba3b3f34e20897032d1ef40fe35'}
+Extracted entity_id: workflow_in_memory_vacation-planner-workflow_6137fba3b3f34e20897032d1ef40fe35
+Found entity: Vacation Planner Workflow (workflow)
+[CANCELLATION] Creating response resp_e9a9fd53 for entity workflow_in_memory_vacation-planner-workflow_6137fba3b3f34e20897032d1ef40fe35
+Executing workflow: workflow_in_memory_vacation-planner-workflow_6137fba3b3f34e20897032d1ef40fe35
+Starting fresh workflow in session conv_01d745dd15164483985c113ad521a3f4
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+AzureCliCredential.get_token_info succeeded
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.15s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 3.87s.
+HTTP Request: POST https://prakashfoundry111.services.ai.azure.com/api/projects/prakash-proj-111/openai/responses?api-version=2025-11-15-preview "HTTP/1.1 200 OK"
+Yielding pre-loop events
+Creating checkpoint after initial execution
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Created checkpoint f68dea17-07a8-42ad-a319-6181f66127c9 for workflow 1e213aa8-bd66-42f6-bb11-6486fb14347c
+Created after_initial_execution checkpoint: f68dea17-07a8-42ad-a319-6181f66127c9
+Starting superstep 1
+AzureCliCredential.get_token_info succeeded
+AzureCliCredential.get_token_info succeeded
+AzureCliCredential.get_token_info succeeded
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.86s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.87s.
+HTTP Request: POST https://prakashfoundry111.services.ai.azure.com/api/projects/prakash-proj-111/openai/responses?api-version=2025-11-15-preview "HTTP/1.1 200 OK"
+HTTP Request: POST https://prakashfoundry111.services.ai.azure.com/api/projects/prakash-proj-111/openai/responses?api-version=2025-11-15-preview "HTTP/1.1 200 OK"
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.84s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+HTTP Request: POST https://prakashfoundry111.services.ai.azure.com/api/projects/prakash-proj-111/openai/responses?api-version=2025-11-15-preview "HTTP/1.1 200 OK"
+Completed superstep 1
+Created checkpoint 769a1989-8f1e-446f-a5a4-b6dc9ec7e365 for workflow 1e213aa8-bd66-42f6-bb11-6486fb14347c
+Created superstep_1 checkpoint: 769a1989-8f1e-446f-a5a4-b6dc9ec7e365
+Starting superstep 2
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.94s.
+AzureCliCredential.get_token_info succeeded
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.03s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.96s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.82s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.16s.
+HTTP Request: POST https://prakashfoundry111.services.ai.azure.com/api/projects/prakash-proj-111/openai/responses?api-version=2025-11-15-preview "HTTP/1.1 200 OK"
+Completed superstep 2
+Created checkpoint 9a23ba55-25fa-4011-a174-7ca49fee90df for workflow 1e213aa8-bd66-42f6-bb11-6486fb14347c
+Created superstep_2 checkpoint: 9a23ba55-25fa-4011-a174-7ca49fee90df
+Workflow completed after 2 supersteps
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.90s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.11s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 3.68s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.89s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.03s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.20s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.84s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.95s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 3.59s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.96s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.11s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 2.30s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.00s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.10s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.82s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.91s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.93s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.05s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.10s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.17s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 3.40s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.89s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.96s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.93s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.93s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.82s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.95s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.98s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 4.00s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.95s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.05s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.00s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.17s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.13s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.85s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.07s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.89s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.06s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 3.97s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.93s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.12s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.94s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.93s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.90s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 4.80s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.92s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.88s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.00s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.89s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.07s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 4.10s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.18s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.03s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.12s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.19s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.14s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 2.01s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.88s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.80s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.04s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.00s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.09s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 4.30s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.19s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.08s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.91s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.94s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.88s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 4.60s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.86s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.15s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.04s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.10s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.96s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.02s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.97s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.96s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.15s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.90s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.19s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.95s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.95s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 4.16s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.87s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.87s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.03s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.96s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.88s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.02s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.85s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.76s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.04s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.86s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.03s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.18s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.86s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 2.24s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.01s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.81s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.86s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.09s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.16s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.71s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.04s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.14s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.86s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.07s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.83s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.09s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.97s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.85s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.94s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.88s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.83s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.16s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.03s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.96s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.07s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.01s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.09s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.10s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 0.89s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.08s.
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.73s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
+Transient error StatusCode.UNAVAILABLE encountered while exporting logs to localhost:4317, retrying in 1.15s.
+Failed to export logs to localhost:4317, error code: StatusCode.UNAVAILABLE
