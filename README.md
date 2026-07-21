@@ -1,282 +1,276 @@
-# 🤖 Agentic AI with Azure AI Foundry
+# Agentic AI with Microsoft Agent Framework
 
-> **Enterprise Training Repository – Accenture | July 2026**
+## Overview
 
-Welcome to the **Agentic AI with Azure AI Foundry** training repository. This repository contains all course materials, hands-on labs, datasets, sample code, and capstone projects used during the instructor-led training program.
+This repository contains the complete hands-on lab material for learning **Agentic AI** using the **Microsoft Agent Framework**, **Azure AI Foundry**, and **Azure OpenAI**.
 
-The training is designed to provide participants with practical experience in building enterprise-grade AI agents using Azure AI Foundry, Azure OpenAI, Retrieval-Augmented Generation (RAG), Multi-Agent Systems, and modern AI orchestration frameworks.
+The course is organized into four learning days, followed by notebooks, datasets, architecture examples, and capstone projects.
 
----
-
-# 📚 Course Overview
-
-This training focuses on designing and developing intelligent AI agents capable of:
-
-- Understanding natural language
-- Reasoning and planning tasks
-- Using enterprise tools and APIs
-- Retrieving information from organizational knowledge bases
-- Collaborating with other AI agents
-- Automating business workflows
-- Following Responsible AI principles
+Participants will learn how to design, build, orchestrate, and deploy intelligent AI agents using enterprise-ready patterns.
 
 ---
 
-# 🎯 Learning Objectives
+# Course Structure
 
-After completing this training, participants will be able to:
-
-- Understand Agentic AI concepts and architecture
-- Build AI applications using Azure AI Foundry
-- Develop Retrieval-Augmented Generation (RAG) solutions
-- Create enterprise AI assistants
-- Implement Multi-Agent Systems
-- Connect AI agents to enterprise tools and APIs
-- Use Model Context Protocol (MCP)
-- Implement memory-aware AI agents
-- Build production-ready enterprise AI solutions
-
----
-
-# 🗓️ Course Schedule
-
-| Day | Topics |
-|------|--------|
-| **Day 1** | Agentic AI Foundations, Azure AI Foundry Setup, Prompt Engineering |
-| **Day 2** | Enterprise Architecture, RAG, Vector Databases, Azure AI Search |
-| **Day 3** | AI Agent Development, Tool Calling, Function Calling, Azure AI Agents |
-| **Day 4** | Multi-Agent Systems, MCP, Memory, Enterprise Agent Orchestration |
-| **Capstone** | End-to-End Enterprise Agentic AI Solution |
-
----
-
-# 📂 Repository Structure
-
-```text
-Agentic-AI-Accenture-July20th/
-│
-├── README.md
-│
-├── DAY1/
-│   ├── Training Slides
-│   ├── Labs
-│   └── README.md
-│
-├── DAY2/
-│   ├── Training Slides
-│   ├── Labs
-│   └── README.md
-│
-├── DAY3/
-│   ├── Labs
-│   └── README.md
-│
-├── DAY4/
-│   ├── Labs
-│   └── README.md
-│
-├── Datasets/
-│   ├── HR Documents
-│   ├── IT Knowledge Base
-│   ├── Employee Records
-│   └── README.md
-│
-└── Capstone-Projects/
-    ├── Project Resources
-    └── README.md
+```
+.
+├── DAY1
+├── DAY2
+├── DAY3
+├── DAY4
+├── Datasets
+├── NoteBooks
+└── capstone-Projects
 ```
 
 ---
 
-# 📖 Modules Covered
+# Repository Contents
 
-## Day 1 – Agentic AI Foundations
+## DAY 1 – Agentic AI Foundations & Environment Setup
 
-- Introduction to Generative AI
-- Large Language Models (LLMs)
+Topics Covered
+
+- Introduction to Agentic AI
+- AI Agents vs Chatbots
+- Agent Framework Overview
 - Azure AI Foundry
 - Azure OpenAI
-- Prompt Engineering
-- Responsible AI
-- Environment Setup
+- Development Environment Setup
+- First AI Agent
+- DevUI Introduction
+- Prompt Engineering Basics
+
+Files
+
+- DAY-1-Agentic_Ai_Foundations___Setup.pdf
+- Readme.md
 
 ---
 
-## Day 2 – Enterprise AI Architecture
+## DAY 2 – Workflow Patterns & RAG
 
-- Retrieval-Augmented Generation (RAG)
-- Embeddings
-- Vector Databases
-- Azure AI Search
-- Enterprise Knowledge Bases
-- Semantic Search
-- AI Evaluation
+Topics Covered
 
----
-
-## Day 3 – AI Agent Development
-
-- AI Agent Fundamentals
-- Azure AI Agent Service
-- Tool Calling
-- Function Calling
-- Enterprise Integrations
-- AI Workflow Automation
-
----
-
-## Day 4 – Multi-Agent Systems
-
-- Multi-Agent Architecture
-- Agent Collaboration
-- AI Memory
-- Model Context Protocol (MCP)
-- Enterprise Automation
-- Human-in-the-Loop
-- Responsible AI
-
----
-
-# 💻 Hands-on Labs
-
-Participants will complete practical exercises covering:
-
-- Azure AI Foundry
-- Azure OpenAI
-- Prompt Engineering
-- RAG Implementation
+- Sequential Workflows
+- Parallel Workflows
+- Conditional Routing
+- Fan-Out / Fan-In
+- Orchestrator Pattern
+- Retrieval Augmented Generation (RAG)
 - Vector Search
-- AI Agents
+- Knowledge Grounding
+
+Files
+
+- DAy-2-Architecture_Patterns___RAG_Agents__A1_.pdf
+- readme.md
+
+---
+
+## DAY 3 – Multi-Agent Systems
+
+Topics Covered
+
+- Multi-Agent Collaboration
+- Agent-to-Agent Communication
 - Tool Calling
-- Enterprise APIs
-- AI Memory
-- Multi-Agent Systems
-- Enterprise Knowledge Assistants
+- Memory
+- Context Sharing
+- Planning Agents
+- Reflection
+- Agent Coordination
+
+Files
+
+- readme.md
 
 ---
 
-# 🏢 Enterprise Use Cases
+## DAY 4 – Enterprise Agentic AI
 
-The labs and capstone projects are based on real-world business scenarios, including:
+Topics Covered
 
-- Human Resources Assistant
-- IT Helpdesk Assistant
-- Customer Service Copilot
-- Sales Assistant
-- Finance Assistant
-- Procurement Assistant
-- Enterprise Knowledge Search
-- Policy & Compliance Assistant
-- Document Intelligence
-- Intelligent Workflow Automation
+- Enterprise AI Architecture
+- Azure AI Foundry Deployment
+- Responsible AI
+- Monitoring
+- Evaluation
+- Security
+- Production Deployment
+- Capstone Preparation
 
----
+Files
 
-# 🛠️ Technologies Used
-
-- Azure AI Foundry
-- Azure OpenAI Service
-- Azure AI Search
-- Azure AI Agent Service
-- Python 3.11+
-- Visual Studio Code
-- Jupyter Notebook
-- LangChain
-- LangGraph
-- Semantic Kernel
-- Model Context Protocol (MCP)
-- Git & GitHub
+- readme.md
 
 ---
 
-# 📁 Datasets
+# Datasets
 
-The **Datasets** folder contains sample enterprise documents used throughout the labs.
+The Datasets folder contains enterprise sample documents used throughout the labs.
 
-Examples include:
+Included datasets
 
-- HR Policies
+- HR Policy Documents
 - Employee Records
 - IT Support Knowledge Base
-- IT Security Policies
-- Professional Workplace Guidelines
+- IT Usage Policy
+- Professional Etiquette Guide
 
-These datasets are used to build enterprise RAG solutions and intelligent AI assistants.
+These datasets are used for
 
----
-
-# 🚀 Capstone Projects
-
-Participants will apply their learning by building a complete enterprise Agentic AI solution.
-
-Example projects include:
-
-- Enterprise HR Assistant
-- IT Support AI Agent
-- Customer Service Copilot
-- Multi-Agent Knowledge Assistant
-- Enterprise Search Platform
+- RAG
+- Search
+- Knowledge Grounding
+- Enterprise Agents
 
 ---
 
-# 📋 Prerequisites
+# Notebooks
 
-Participants should have:
+Jupyter notebooks are provided for all practical exercises.
 
-- Basic programming knowledge (Python recommended)
-- Basic understanding of REST APIs
-- Familiarity with Git and GitHub
-- An Azure subscription (recommended)
-- Visual Studio Code installed
+Examples include
 
----
+## A2A (Agent-to-Agent)
 
-# 🎓 Target Audience
+- a2a_client.ipynb
+- a2a_server.ipynb
 
-This training is suitable for:
+Demonstrates
 
-- AI Engineers
-- Software Developers
-- Solution Architects
-- Cloud Engineers
-- Data Engineers
-- Machine Learning Engineers
-- Technical Consultants
-- Enterprise Architects
+- Agent Communication
+- Message Passing
+- Collaboration
 
 ---
 
-# 📚 Recommended References
+## Mini Projects
 
-- Microsoft Learn – Azure AI Foundry
-- Azure OpenAI Documentation
-- Azure AI Search Documentation
-- OpenAI API Documentation
-- LangChain Documentation
-- LangGraph Documentation
-- Semantic Kernel Documentation
-- Model Context Protocol (MCP) Specification
+Hands-on implementation of
+
+- Sequential Workflows
+- Parallel Workflows
+- Orchestrator Pattern
+- Multi-Agent Systems
 
 ---
 
-# 📄 License
+# Capstone Projects
 
-This repository and its contents are provided exclusively for instructor-led training, learning, demonstration, and proof-of-concept purposes.
+Enterprise-level projects combining all concepts learned during the course.
 
-Do not redistribute or use the materials for commercial purposes without prior authorization from the repository owner.
+Examples include
 
----
-
-# 👨‍💻 Maintained By
-
-**AVYUKTI TECH PRIVATE LIMITED**
-
-Enterprise AI • Agentic AI • Azure AI Foundry • Generative AI • Intelligent Automation
+- HR Assistant
+- IT Helpdesk Agent
+- Vacation Planner
+- Enterprise Knowledge Assistant
+- Multi-Agent Orchestrator
 
 ---
 
-## ⭐ Acknowledgements
+# Prerequisites
 
-Special thanks to all participants, trainers, and contributors who support continuous learning and innovation in Enterprise AI and Agentic AI technologies.
+- Python 3.11+
+- Visual Studio Code
+- Git
+- Azure Subscription
+- Azure AI Foundry Project
+- Azure OpenAI Deployment
+- Azure CLI
 
-**Happy Learning! 🚀**
+---
+
+# Required Python Packages
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# Environment Variables
+
+Create a `.env` file.
+
+```env
+AI_FOUNDRY_PROJECT_ENDPOINT=<your_project_endpoint>
+
+AI_FOUNDRY_DEPLOYMENT_NAME=<deployment_name>
+
+AZURE_TENANT_ID=<tenant_id>
+```
+
+---
+
+# Running the Labs
+
+Clone the repository
+
+```bash
+git clone <repository-url>
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run notebooks
+
+```bash
+jupyter notebook
+```
+
+Run DevUI samples
+
+```bash
+python orchestrator-devui.py
+```
+
+or
+
+```bash
+python parallel-workflow.py
+```
+
+---
+
+# Learning Outcomes
+
+By the end of this course, participants will be able to
+
+- Understand Agentic AI concepts
+- Build AI agents
+- Design workflow orchestration
+- Implement RAG
+- Develop multi-agent systems
+- Connect external tools
+- Deploy using Azure AI Foundry
+- Monitor enterprise AI applications
+
+---
+
+# Technologies Used
+
+- Microsoft Agent Framework
+- Azure AI Foundry
+- Azure OpenAI
+- Python
+- Jupyter Notebook
+- DevUI
+- Azure CLI
+- Vector Search
+- RAG
+- Agent Orchestration
+
+---
+
+# License
+
+This repository is intended for educational and corporate training purposes.
+
+© AVYUKTi Tech Private Limited
