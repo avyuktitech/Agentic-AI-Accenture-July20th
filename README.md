@@ -239,57 +239,35 @@ flowchart LR
 ```
 
 
-# RAG Architecture
+
+## Retrieval-Augmented Generation (RAG) Architecture
 
 ```mermaid
 flowchart LR
 
-Documents
+    User[User Query]
 
--->
+    Docs[Enterprise Documents]
+    Chunk[Chunk Documents]
+    Embed[Embedding Model]
+    Search[Azure AI Search]
 
-Chunking
+    Retriever[Retriever]
+    Prompt[Prompt Builder]
+    LLM[Azure OpenAI]
+    Response[Grounded Response]
 
--->
+    Docs --> Chunk
+    Chunk --> Embed
+    Embed --> Search
 
-Embeddings
-
--->
-
-Vector Database
-
-User
-
--->
-
-Retriever
-
-Retriever
-
--->
-
-Vector Database
-
-Vector Database
-
--->
-
-Relevant Chunks
-
-Relevant Chunks
-
--->
-
-LLM
-
-LLM
-
--->
-
-Answer
+    User --> Retriever
+    Retriever --> Search
+    Search --> Prompt
+    User --> Prompt
+    Prompt --> LLM
+    LLM --> Response
 ```
-
----
 
 # Agent-to-Agent Communication
 
