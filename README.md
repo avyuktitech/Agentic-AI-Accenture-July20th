@@ -216,35 +216,28 @@ Planner --> Output
 
 ---
 
-# Sequential Workflow
+## Sequential Workflow
+
+## Sequential Workflow
 
 ```mermaid
 flowchart LR
+    U[User]
+    L[Location Agent]
+    D[Destination Agent]
+    W[Weather Agent]
+    C[Cuisine Agent]
+    P[Itinerary Planner]
+    R[Final Itinerary]
 
-User
-
--->
-
-Agent1
-
--->
-
-Agent2
-
--->
-
-Agent3
-
--->
-
-Agent4
-
--->
-
-Final Response
+    U --> L
+    L --> D
+    D --> W
+    W --> C
+    C --> P
+    P --> R
 ```
 
----
 
 # RAG Architecture
 
